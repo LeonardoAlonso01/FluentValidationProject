@@ -12,7 +12,7 @@ namespace FluentValidation.API.Application.Validators
                 .WithMessage("Nome é obrigatório");
 
             RuleFor(p => p.Age)
-                .GreaterThan(18)
+                .GreaterThanOrEqualTo(18)
                 .WithMessage("Não é permitido cadastro para menores de 18 anos");
         }
     }
